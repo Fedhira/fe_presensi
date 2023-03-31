@@ -12,7 +12,7 @@ function isiRow(value) {
             .replace("#LOKASI#", value.location)
             .replace("#STATUS#", value.checkin)
             .replace("#HARIKERJA#", value.biodata.hari_kerja? value.biodata.hari_kerja:"HARIKERJA")
-            .replace("#JAMKERJA#", value.biodata.jam_kerja? value.biodata.jam_kerja[0].durasi:"#JAMKERJA")
+            .replace("#JAMKERJA#", value.biodata.jam_kerja? value.biodata.jam_kerja[0].durasi:"#JAMKERJA#")
             .replace("#JAMMASUK#", value.biodata.hari_kerja? value.biodata.jam_masuk : "#JAMMASUK#")
             .replace("#JAMKELUAR#", value.biodata.hari_kerja? value.biodata.jam_keluar : "#JAMKELUAR#")
             .replace("#WARNA#", getRandomColor())
