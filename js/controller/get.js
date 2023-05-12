@@ -13,9 +13,10 @@ function isiRow(value) {
             .replace("#STATUS#", value.checkin)
             .replace("#HARIKERJA#", value.biodata.hari_kerja? value.biodata.hari_kerja:"HARIKERJA")
             .replace("#JAMKERJA#", value.biodata.jam_kerja? value.biodata.jam_kerja[0].durasi:"#JAMKERJA#")
-            .replace("#JAMMASUK#", value.biodata.hari_kerja? value.biodata.jam_masuk : "#JAMMASUK#")
-            .replace("#JAMKELUAR#", value.biodata.hari_kerja? value.biodata.jam_keluar : "#JAMKELUAR#")
+            .replace("#JAMMASUK#", value.biodata.hari_kerja ? value.biodata.jam_kerja[0].jam_masuk : "#JAMMASUK#")
+            .replace("#JAMKELUAR#", value.biodata.hari_kerja ? value.biodata.jam_kerja[0].jam_keluar : "#JAMKELUAR#")
             .replace("#WARNA#", getRandomColor())
             .replace(/#WARNALOGO#/g, getRandomColorName());
+            
     addInner("iniTabel", content);
 }
