@@ -1,6 +1,6 @@
 function deleteData() {
     var presensiId = document.querySelector('a[data-presensi-id]').getAttribute('data-presensi-id');
-    var target_url = "https://ws-ulbi.herokuapp.com/delete/" + presensiId;
+    var target_url = "https://fedhirasyaila.herokuapp.com/delete/" + presensiId; 
 
     var requestOptions = {
         method: 'DELETE',
